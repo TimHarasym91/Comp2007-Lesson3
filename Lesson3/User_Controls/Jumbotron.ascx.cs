@@ -5,18 +5,14 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Lesson3
+namespace Lesson3.User_Controls
 {
-    public partial class Contact : System.Web.UI.Page
+
+    public partial class Jumbotron : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-        }
-
-        protected void SubmitButton_Click(object sender, EventArgs e)
-        {
-            //Email processing code goes here
+            JumbotronH1.InnerText = "Welcome!";
         }
     }
 }
